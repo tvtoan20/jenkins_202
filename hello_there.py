@@ -5,6 +5,6 @@ import requests
 x = requests.get('https://www.google.com')
 
 if x.status_code == 200:
-  print('Okayyyyyyyyyy!')
+  print('Okay!')
 else:
-  print('NOT Okayyyyyy!')
+  print('NOT Okay!')
