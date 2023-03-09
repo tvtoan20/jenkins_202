@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
+                echo "Building image.."
                 sh '''
                 docker build -t hello_there .
                 '''
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                echo "Running.."
+                echo "Running container.."
                 sh '''
                 docker run --rm hello_there
                 '''
